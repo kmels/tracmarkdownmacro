@@ -24,10 +24,8 @@ from StringIO import StringIO
 
 # links, autolinks, and reference-style links
 
-LINK = compile(
-    r'(\]\()([^) ]+)([^)]*\))|(<)([^>]+)(>)|(\n\[[^]]+\]: *)([^ \n]+)(.*\n)'
-)
-HREF = compile(r'href=[\'"]?([^\'" ]*)')
+LINK = r'(\]\()([^) ]+)([^)]*\))|(<)([^>]+)(>)|(\n\[[^]]+\]: *)([^ \n]+)(.*\n)'                                                           
+HREF = r'href=[\'"]?([^\'" ]*)'   
 
 __all__ = ['MarkdownMacro']
 
